@@ -1,0 +1,87 @@
+/*  author: jose mejia | jmrx  */
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  color: #fff;
+}
+/* Styles General */
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #1f1f25;
+}
+
+/* Style for the login */
+.login {
+  width: 400px;
+  min-height: 400px;
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #23232b;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #000;
+}
+/* Style for the form and inputs */
+
+.form .input input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 0.9375rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0 1px #000;
+  background: none;
+}
+.form .input input:focus {
+  border: 1px solid rgba(13, 92, 129, 1);
+}
+
+.forgot a {
+  padding: 7px;
+  font-size: 15px;
+  color: #52525a;
+  cursor: pointer;
+}
+.forgot a:hover,
+.forgot a:focus {
+  color: rgba(13, 92, 129, 1);
+}
+
+/* Style for the button of submit */
+input[type="submit"] {
+  font-family: 500;
+  cursor: pointer;
+  background-color: rgba(13, 92, 129, 1) !important;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  border: 2px solid #fff;
+  transform: scale(1.05);
+  transition: all 0.5s ease-out;
+}
+
+/*change placeholder color */
+::placeholder {
+  color: #cdcde5;
+}
+
+/* Remove input background color for autocomplete */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
